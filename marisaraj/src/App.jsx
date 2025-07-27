@@ -1,35 +1,34 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import './App.css';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="container">
+      <nav className="navbar">
+        <a href='https://www.linkedin.com/in/marisaraj/' target='_blank' rel='noreferrer' className="nav-link">Conta<br/>ct Me/</a>
+      </nav>
+
+      <div className="content-row">
+        <div className="name-block">
+          <h1>Marisa</h1>
+          <h2>Raj.</h2>
+        </div>
+
+        <div className="bio-block">
+          <p>
+          I'm a Software Engineer with over 3 years of experience building scalable solutions across Telecom, FinTech, and EV sectors. 
+          <br></br>
+          I started out in frontend development with React, gradually expanded into backend work using Go and Python, and eventually embraced DevOps to ensure smoother, more reliable deployments. 
+          <br/>   
+          I enjoy working closely with stakeholders to turn complex business needs into practical, maintainable software.
+          <br></br>
+          At the core, I love solving real-world problems, learning new things, and building software that actually makes a difference.
+          </p>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+
+      <img src="/assets/komodo_dragon.png" alt="Komodo Sketch" className="komodo-background" />
+    </div>
+  );
 }
 
-export default App
+export default App;
